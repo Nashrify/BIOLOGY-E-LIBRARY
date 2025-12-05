@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Library Hub (Form 1-4) - Multi Subject Learning</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="index.css" />
+
+  <style>
+    .content-section {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 font-sans">
+  <nav class="bg-blue-800 text-white shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold nav-link" data-target="home-content">
+        📚 E-Library Hub
+      </a>
+      <div class="hidden md:flex space-x-4">
+        <a href="#" class="nav-link px-3 py-2 rounded hover:bg-blue-700" data-target="home-content">Home</a>
+        <a href="#about-content" class="nav-link px-3 py-2 rounded hover:bg-blue-700" data-target="about-content">About
+          Us</a>
+        <div class="relative group">
+          <button class="px-3 py-2 rounded hover:bg-blue-700">Subjects ▼</button>
+          <div class="absolute hidden group-hover:block bg-blue-900 rounded shadow-lg mt-0 w-48 z-50">
+            <a href="#" class="nav-link block px-4 py-2 hover:bg-blue-800" data-target="biology-content">Biology</a>
+            <a href="#" class="nav-link block px-4 py-2 hover:bg-blue-800" data-target="chemistry-content">Chemistry</a>
+            <a href="#" class="nav-link block px-4 py-2 hover:bg-blue-800" data-target="physics-content">Physics</a>
+            <a href="#" class="nav-link block px-4 py-2 hover:bg-blue-800" data-target="math-content">Mathematics</a>
+            <a href="#" class="nav-link block px-4 py-2 hover:bg-blue-800" data-target="english-content">English</a>
+          </div>
+        </div>
+      </div>
+      <div class="md:hidden">
+        <button class="text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mx-auto p-6">
+    <section id="about-content" class="content-section py-12 px-4 sm:px-8">
+      <div class="max-w-3xl mx-auto bg-white p-8 sm:p-10 rounded-2xl shadow-xl border border-blue-100">
+        <h2 class="text-4xl font-extrabold text-blue-800 mb-6 text-center">
+          About Us
+        </h2>
+        <p class="text-gray-700 leading-relaxed mb-5 text-lg">
+          The
+          <span class="font-semibold text-blue-700">E-Library Hub</span>
+          is dedicated to providing comprehensive, high-quality learning
+          resources across multiple subjects for students from Form 1 to Form 4. Our mission is to make
+          quality education
+          <span class="font-medium text-blue-800">accessible, engaging,</span>
+          and aligned with modern learning needs.
+        </p>
+        <p class="text-gray-700 leading-relaxed text-lg">
+          Whether you're searching for
+          <span class="font-semibold text-blue-700">notes, textbooks, or interactive quizzes</span>, our digital library
+          offers everything you need to excel across all subjects.
+          <span class="font-medium text-blue-800">Start exploring today</span>
+          and elevate your academic knowledge!
+        </p>
+      </div>
+    </section>
+    <section id="home-content" class="content-section">
+      <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+        [Image of Books and Learning]
+
+        <h1 class="text-4xl font-bold text-blue-800 mb-4">
+          Welcome to E-Library Hub
+        </h1>
+        <p class="text-lg text-gray-700 mb-6">
+          Your comprehensive source for all subject learning resources from Form 1 to Form 4.
+        </p>
+        <p class="text-gray-600">
+          Select a subject or form from the navigation bar to begin your learning journey.
+        </p>
+
+        <div class="mt-12">
+          <h2 class="text-3xl font-bold text-blue-800 mb-8 text-center">Explore by Subject</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div
+              class="nav-link bg-blue-100 p-6 rounded-lg shadow-sm hover:shadow-md cursor-pointer border border-blue-300 transform hover:scale-105 transition"
+              data-target="biology-content">
+              <h3 class="text-2xl font-semibold text-blue-700">🧬 Biology</h3>
+            </div>
+            <div
+              class="nav-link bg-green-100 p-6 rounded-lg shadow-sm hover:shadow-md cursor-pointer border border-green-300 transform hover:scale-105 transition"
+              data-target="chemistry-content">
+              <h3 class="text-2xl font-semibold text-green-700">⚗️ Chemistry</h3>
+            </div>
+            <div
+              class="nav-link bg-red-100 p-6 rounded-lg shadow-sm hover:shadow-md cursor-pointer border border-red-300 transform hover:scale-105 transition"
+              data-target="physics-content">
+              <h3 class="text-2xl font-semibold text-red-700">⚛️ Physics</h3>
+            </div>
+            <div
+              class="nav-link bg-purple-100 p-6 rounded-lg shadow-sm hover:shadow-md cursor-pointer border border-purple-300 transform hover:scale-105 transition"
+              data-target="math-content">
+              <h3 class="text-2xl font-semibold text-purple-700">∑ Math</h3>
+            </div>
+            <div
+              class="nav-link bg-yellow-100 p-6 rounded-lg shadow-sm hover:shadow-md cursor-pointer border border-yellow-300 transform hover:scale-105 transition"
+              data-target="english-content">
+              <h3 class="text-2xl font-semibold text-yellow-700">📖 English</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="form1-content" class="content-section">
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-blue-800 mb-6">
+          Form 1 Learning Resources
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover"
+              src="https://via.placeholder.com/400x250/a0eec0/166534?text=Intro+to+Biology"
+              alt="Introduction to Biology" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-green-800 mb-2">
+                Chapter 1: Introduction to Biology
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Learn the basics, branches, and importance of studying
+                Biology.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#"
+                  class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full hover:bg-green-200">
+                  Notes (PDF)
+                </a>
+                <a href="#"
+                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full hover:bg-blue-200">
+                  Video
+                </a>
+                <a href="#"
+                  class="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-3 py-1 rounded-full hover:bg-yellow-200">
+                  Quiz
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover" src="https://via.placeholder.com/400x250/a0eec0/166534?text=The+Cell"
+              alt="The Cell" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-green-800 mb-2">
+                Chapter 2: The Cell
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Explore the structure and function of plant and animal cells.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#" class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">
+                  Coming Soon
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover"
+              src="https://via.placeholder.com/400x250/a0eec0/166534?text=Classification" alt="Classification" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-green-800 mb-2">
+                Chapter 3: Classification
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Understand how scientists classify living organisms
+                (Taxonomy).
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#" class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">
+                  Coming Soon
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHEMISTRY SECTION -->
+    <section id="chemistry-content" class="content-section">
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-green-800 mb-6">
+          Chemistry Learning Resources
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover"
+              src="https://via.placeholder.com/400x250/90ee90/228b22?text=Atoms+and+Molecules"
+              alt="Atoms and Molecules" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-green-800 mb-2">Atoms & Molecules</h3>
+              <p class="text-gray-600 text-sm mb-4">Learn about atomic structure and molecular bonding.</p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#"
+                  class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">Coming
+                  Soon</a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover"
+              src="https://via.placeholder.com/400x250/90ee90/228b22?text=Reactions+and+Equations" alt="Reactions" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-green-800 mb-2">Chemical Reactions</h3>
+              <p class="text-gray-600 text-sm mb-4">Understand chemical equations and reaction types.</p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#"
+                  class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">Coming
+                  Soon</a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover"
+              src="https://via.placeholder.com/400x250/90ee90/228b22?text=States+of+Matter" alt="States of Matter" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-green-800 mb-2">States of Matter</h3>
+              <p class="text-gray-600 text-sm mb-4">Explore solids, liquids, and gases.</p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#"
+                  class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">Coming
+                  Soon</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHYSICS SECTION -->
+    <section id="physics-content" class="content-section">
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-red-800 mb-6">
+          Physics Learning Resources
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover"
+              src="https://via.placeholder.com/400x250/ff6b6b/990000?text=Motion+and+Forces" alt="Motion" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-red-800 mb-2">Motion & Forces</h3>
+              <p class="text-gray-600 text-sm mb-4">Learn Newton's laws and kinematics.</p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#"
+                  class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">Coming
+                  Soon</a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover"
+              src="https://via.placeholder.com/400x250/ff6b6b/990000?text=Energy+and+Work" alt="Energy" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-red-800 mb-2">Energy & Work</h3>
+              <p class="text-gray-600 text-sm mb-4">Understand energy transfer and work.</p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#"
+                  class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">Coming
+                  Soon</a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover"
+              src="https://via.placeholder.com/400x250/ff6b6b/990000?text=Electricity+and+Magnetism"
+              alt="Electricity" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-red-800 mb-2">Electricity & Magnetism</h3>
+              <p class="text-gray-600 text-sm mb-4">Explore electric circuits and magnetic fields.</p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#"
+                  class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">Coming
+                  Soon</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATHEMATICS SECTION -->
+    <section id="math-content" class="content-section">
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-purple-800 mb-6">
+          Mathematics Learning Resources
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover" src="https://via.placeholder.com/400x250/9966cc/330066?text=Algebra"
+              alt="Algebra" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-purple-800 mb-2">Algebra</h3>
+              <p class="text-gray-600 text-sm mb-4">Master equations, inequalities, and functions.</p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#"
+                  class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">Coming
+                  Soon</a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover" src="https://via.placeholder.com/400x250/9966cc/330066?text=Geometry"
+              alt="Geometry" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-purple-800 mb-2">Geometry</h3>
+              <p class="text-gray-600 text-sm mb-4">Learn shapes, angles, and spatial relationships.</p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#"
+                  class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">Coming
+                  Soon</a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover"
+              src="https://via.placeholder.com/400x250/9966cc/330066?text=Trigonometry" alt="Trigonometry" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-purple-800 mb-2">Trigonometry</h3>
+              <p class="text-gray-600 text-sm mb-4">Understand triangles, sines, cosines, and more.</p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#"
+                  class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">Coming
+                  Soon</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGLISH SECTION -->
+    <section id="english-content" class="content-section">
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-yellow-800 mb-6">
+          English Learning Resources
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover"
+              src="https://via.placeholder.com/400x250/ffd700/ccaa00?text=Grammar+and+Syntax" alt="Grammar" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-yellow-800 mb-2">Grammar & Syntax</h3>
+              <p class="text-gray-600 text-sm mb-4">Master sentence structure and grammar rules.</p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#"
+                  class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">Coming
+                  Soon</a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover"
+              src="https://via.placeholder.com/400x250/ffd700/ccaa00?text=Literature+and+Comprehension"
+              alt="Literature" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-yellow-800 mb-2">Literature & Comprehension</h3>
+              <p class="text-gray-600 text-sm mb-4">Analyze texts, poetry, and prose.</p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#"
+                  class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">Coming
+                  Soon</a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover"
+              src="https://via.placeholder.com/400x250/ffd700/ccaa00?text=Writing+and+Composition" alt="Writing" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-yellow-800 mb-2">Writing & Composition</h3>
+              <p class="text-gray-600 text-sm mb-4">Improve writing skills and essay composition.</p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#"
+                  class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">Coming
+                  Soon</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BIOLOGY SECTION -->
+    <section id="biology-content" class="content-section">
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-blue-800 mb-6">
+          Biology Learning Resources
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover"
+              src="https://via.placeholder.com/400x250/a0eec0/166534?text=Intro+to+Biology"
+              alt="Introduction to Biology" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-green-800 mb-2">
+                Chapter 1: Introduction to Biology
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Learn the basics, branches, and importance of studying Biology.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#"
+                  class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full hover:bg-green-200">
+                  Notes (PDF)
+                </a>
+                <a href="#"
+                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full hover:bg-blue-200">
+                  Video
+                </a>
+                <a href="#"
+                  class="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-3 py-1 rounded-full hover:bg-yellow-200">
+                  Quiz
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover" src="https://via.placeholder.com/400x250/a0eec0/166534?text=The+Cell"
+              alt="The Cell" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-green-800 mb-2">
+                Chapter 2: The Cell
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Explore the structure and function of plant and animal cells.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#" class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">
+                  Coming Soon
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover"
+              src="https://via.placeholder.com/400x250/a0eec0/166534?text=Classification" alt="Classification" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-green-800 mb-2">
+                Chapter 3: Classification
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Understand how scientists classify living organisms (Taxonomy).
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#" class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">
+                  Coming Soon
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="form2-content" class="content-section">
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-green-800 mb-6">
+          Form 2 Learning Resources
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover" src="https://via.placeholder.com/400x250/99d9ea/1a5f7a?text=Transport"
+              alt="Transport in Plants and Animals" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-green-800 mb-2">
+                Chapter 1: Transport in Plants & Animals
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Study the circulatory system in animals and vascular bundles
+                in plants.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#" class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">
+                  Coming Soon
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover"
+              src="https://via.placeholder.com/400x250/99d9ea/1a5f7a?text=Gaseous+Exchange" alt="Gaseous Exchange" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-green-800 mb-2">
+                Chapter 2: Gaseous Exchange
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Learn about breathing mechanisms and gas exchange in various
+                organisms.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#" class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">
+                  Coming Soon
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <img class="w-full h-40 object-cover"
+              src="https://via.placeholder.com/400x250/99d9ea/1a5f7a?text=Respiration" alt="Respiration" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-green-800 mb-2">
+                Chapter 3: Respiration
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Understand aerobic and anaerobic respiration and energy
+                production.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#" class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">
+                  Coming Soon
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="form4-content" class="py-16 bg-gray-50">
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="bg-white p-10 rounded-2xl shadow-xl border border-gray-100">
+          <h2 class="text-4xl font-extrabold text-green-800 mb-10 tracking-tight text-center">
+            Form 3 Learning Resources
+          </h2>
+
+          <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- CARD 1 -->
+            <div
+              class="bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-all duration-300">
+              <div class="bg-green-100 p-6 flex justify-center">
+                <img src="FORM-THREE-TIE-TEXTBOOK.jpg" alt="FORM FOUR BIOLOGY TIE" class="h-36 object-contain" />
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-3">
+                  <h3 class="text-xl font-bold text-green-900 leading-snug">
+                    Form Three Biology TIE Textbook
+                  </h3>
+                  <span class="bg-yellow-200 text-yellow-900 text-xs font-semibold px-3 py-1 rounded-full shadow-sm">
+                    Biology F3 TIE Textbook
+                  </span>
+                </div>
+
+                <p class="text-gray-600 text-sm mb-5">
+                  Click download to get the official Form Four Biology TIE textbook.
+                </p>
+
+                <div class="flex justify-between items-center">
+                  <p class="text-sm text-gray-500">PDF • 10.5MB</p>
+
+                  <a href="BIOLOGY_F3_TIE_TEXTBOOK.pdf" download
+                    class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-green-600 transition font-medium flex items-center gap-2 shadow-md">
+                    <i class="fas fa-download"></i> Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div
+              class="bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-all duration-300">
+              <div class="bg-green-100 p-6 flex justify-center">
+                <img src="FORM-THREE-TIE-TEXTBOOK.jpg" alt="Form Four Biology Notes" class="h-36 object-contain" />
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-3">
+                  <h3 class="text-xl font-bold text-green-900 leading-snug">
+                    Form Three Biology Full Notes
+                  </h3>
+                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full shadow-sm">
+                    Notes PDF
+                  </span>
+                </div>
+
+                <p class="text-gray-600 text-sm mb-5">
+                  Click download to access the complete Form Three Biology notes.
+                </p>
+
+                <div class="flex justify-between items-center">
+                  <p class="text-sm text-gray-500">PDF • 5.5MB</p>
+
+                  <a href="BIOLOGY F3 NOTES.pdf" download
+                    class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-green-500 transition font-medium flex items-center gap-2 shadow-md">
+                    <i class="fas fa-download"></i> Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="form4-content" class="py-16 bg-gray-50">
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="bg-white p-10 rounded-2xl shadow-xl border border-gray-100">
+          <h2 class="text-4xl font-extrabold text-green-800 mb-10 tracking-tight text-center">
+            Form 4 Learning Resources
+          </h2>
+
+          <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- CARD 1 -->
+            <div
+              class="bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-all duration-300">
+              <div class="bg-green-100 p-6 flex justify-center">
+                <img src="FORM-THREE-TIE-TEXTBOOK.jpg" alt="FORM FOUR BIOLOGY TIE" class="h-36 object-contain" />
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-3">
+                  <h3 class="text-xl font-bold text-green-900 leading-snug">
+                    Form Four Biology TIE Textbook
+                  </h3>
+                  <span class="bg-yellow-200 text-yellow-900 text-xs font-semibold px-3 py-1 rounded-full shadow-sm">
+                    Official Textbook
+                  </span>
+                </div>
+
+                <p class="text-gray-600 text-sm mb-5">
+                  Click download to get Form Four Biology TIE textbook.
+                </p>
+
+                <div class="flex justify-between items-center">
+                  <p class="text-sm text-gray-500">PDF • 10.5MB</p>
+
+                  <a href="BIOLOGY_F4_TIE_TEXTBOOK.pdf" download
+                    class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-green-500 transition font-medium flex items-center gap-2 shadow-md">
+                    <i class="fas fa-download"></i> Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div
+              class="bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-all duration-300">
+              <div class="bg-green-100 p-6 flex justify-center">
+                <img src="FORM-THREE-TIE-TEXTBOOK.jpg" alt="Form Four Biology Notes" class="h-36 object-contain" />
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-3">
+                  <h3 class="text-xl font-bold text-green-900 leading-snug">
+                    Form Four Biology Full Notes
+                  </h3>
+                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full shadow-sm">
+                    Notes PDF
+                  </span>
+                </div>
+
+                <p class="text-gray-600 text-sm mb-5">
+                  Click download to access the complete Form Four Biology notes.
+                </p>
+
+                <div class="flex justify-between items-center">
+                  <p class="text-sm text-gray-500">PDF • 5.5MB</p>
+
+                  <a href="BIOLOGY_F4_TIE_TEXTBOOK.pdf" download
+                    class="bg-green-700 text-white px-5 py-2 rounded-lg hover:bg-green-800 transition font-medium flex items-center gap-2 shadow-md">
+                    <i class="fas fa-download"></i> Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1. Get all navigation links and content sections
+      const navLinks = document.querySelectorAll(".nav-link");
+      const contentSections = document.querySelectorAll(".content-section");
+
+      // 2. Function to show a specific content section
+      function showContent(targetId) {
+        // Hide all content sections
+        contentSections.forEach((section) => {
+          section.style.display = "none";
+        });
+
+        // Show the target section
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          targetSection.style.display = "block";
+        }
+      }
+
+      // 3. Add click event listeners to all nav links
+      navLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault(); // Prevent default anchor link behavior
+          const targetId = link.getAttribute("data-target");
+          showContent(targetId);
+        });
+      });
+
+      // 4. Show the 'home-content' section by default on page load
+      showContent("home-content");
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <!-- Main footer content -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+        <!-- Company info -->
+        <div>
+          <h3 class="font-bold text-xl mb-4 flex items-center">
+            <i class="fas fa-dna mr-2 text-blue-300"></i> E-Library Hub
+          </h3>
+          <p class="text-blue-100 mb-4">Your comprehensive resource hub for multi-subject education and study materials.
+          </p>
+          <div class="flex space-x-4 mb-4">
+            <a href="#" class="text-blue-300 hover:text-white transition" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/nash_rify?igsh=MXQza3NqdGEyaGNnaA=="
+              class="text-blue-300 hover:text-white transition" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/qr/GRRFDVDECUP3M1" class="text-blue-300 hover:text-white transition"
+              aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:info.natlabs@gmail.com" class="text-blue-300 hover:text-white transition"
+              aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <!-- Subscribe form -->
+          <div class="mt-4">
+            <p class="text-sm text-blue-200 mb-2">Subscribe to our newsletter:</p>
+            <form class="flex">
+              <input type="email" placeholder="Your email"
+                class="px-3 py-2 text-gray-900 text-sm rounded-l w-full focus:outline-none">
+              <button type="submit" class="bg-blue-600 hover:bg-blue-500 px-3 py-2 rounded-r text-sm transition">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Resources -->
+        <div>
+          <h4 class="font-bold mb-4 text-blue-300">Resources</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-blue-100 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-xs mr-2 text-blue-300"></i>All Notes
+              </a></li>
+            <li><a href="#" class="text-blue-100 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-xs mr-2 text-blue-300"></i>Study Guides
+              </a></li>
+            <li><a href="#" class="text-blue-100 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-xs mr-2 text-blue-300"></i>Practice Tests
+              </a></li>
+            <li><a href="#" class="text-blue-100 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-xs mr-2 text-blue-300"></i>Video Tutorials
+              </a></li>
+            <li><a href="#" class="text-blue-100 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-xs mr-2 text-blue-300"></i>Diagrams & Charts
+              </a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-bold mb-4 text-blue-300">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-blue-100 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-xs mr-2 text-blue-300"></i>About Us
+              </a></li>
+            <li><a href="#" class="text-blue-100 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-xs mr-2 text-blue-300"></i>Contact Us
+              </a></li>
+            <li><a href="#" class="text-blue-100 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-xs mr-2 text-blue-300"></i>FAQ
+              </a></li>
+            <li><a href="#" class="text-blue-100 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-xs mr-2 text-blue-300"></i>Privacy Policy
+              </a></li>
+            <li><a href="#" class="text-blue-100 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-xs mr-2 text-blue-300"></i>Terms of Service
+              </a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="font-bold mb-4 text-blue-300">Contact Info</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-300"></i>
+              <span class="text-blue-100">123 Education Avenue, Science Building, Suite 101</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-phone mt-1 mr-3 text-blue-300"></i>
+              <span class="text-blue-100">+255617007923</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-envelope mt-1 mr-3 text-blue-300"></i>
+              <a href="mailto:info.natlabs@gmail.com"
+                class="text-blue-100 hover:text-white transition">info.natlabs@gmail.com</a>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-clock mt-1 mr-3 text-blue-300"></i>
+              <div>
+                <p class="text-blue-100">Mon-Fri: 8am - 5pm</p>
+                <p class="text-blue-100">Sat: 10am - 2pm</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Developer credit -->
+      <div class="border-t border-b border-blue-800 py-3 mb-4 text-center">
+        <p class="text-blue-200 text-sm">Designed & Developed by Mr. Alchemy</p>
+      </div>
+
+      <!-- Copyright -->
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-blue-200 text-sm mb-4 md:mb-0">
+          © <span id="footerYear"></span> E-Library Hub All rights reserved.
+        </p>
+
+        <!-- Additional links -->
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+          <a href="#" class="text-blue-200 hover:text-white text-sm transition">Careers</a>
+          <a href="#" class="text-blue-200 hover:text-white text-sm transition">Support</a>
+          <a href="#" class="text-blue-200 hover:text-white text-sm transition">Blog</a>
+          <a href="#" class="text-blue-200 hover:text-white text-sm transition">Educational Partners</a>
+        </div>
+      </div>
+
+      <!-- Back to top button -->
+      <div class="text-center mt-6">
+        <a href="#top" class="inline-block bg-blue-800 hover:bg-blue-700 text-white px-4 py-2 rounded-full transition">
+          <i class="fas fa-arrow-up mr-2"></i>Back to Top
+        </a>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <!-- Dynamic Year Script -->
+  <script>
+    const publishedYear = 2025;
+    const currentYear = new Date().getFullYear();
+    const yearText = (currentYear === publishedYear)
+      ? `${publishedYear}`
+      : `${publishedYear} - ${currentYear}`;
+    document.getElementById("footerYear").textContent = yearText;
+  </script>
+</body>
+
+</html>
